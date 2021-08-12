@@ -8,7 +8,8 @@ It is still work in progress!
 
 ### Documentation
 
-
+[API Coverage](https://github.com/de-MMXIV/Paladins.net/blob/master/Docs/Coverage.md)  
+[Examples](https://github.com/de-MMXIV/Paladins.net/blob/master/Docs/Usage.md)
 
 
 ### Contact
