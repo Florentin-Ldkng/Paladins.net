@@ -53,6 +53,12 @@ namespace Paladins.Net
                 "getpatchinfo"));
         }
 
+        public Champion[] GetChampions(LanguageCode LanguageCode)
+        {
+            return _requestHandler.Call<Champion[]>(EndpointFunctions.BuildUrl(Endpoints.GET_CHAMPIONS, "getchampions",
+                LanguageCode.ToString("D")));
+        }
+
         public LeaderboardPlayer[] GetChampionLeaderboard(int ChampionId)
         {
             return _requestHandler.Call<LeaderboardPlayer[]>(EndpointFunctions.BuildUrl(

@@ -17,6 +17,7 @@ namespace Paladins.Net
         public static string GET_DATA_USED = $"{Url}getdatausedJson";
         public static string GET_HIREZ_SERVER_STATUS = $"{Url}gethirezserverstatusJson";
         public static string GET_PATCH_INFO = $"{Url}getpatchinfoJson";
+        public static string GET_CHAMPIONS = $"{Url}getchampionsJson";
         public static string GET_CHAMPION_LEADERBOARD = $"{Url}getchampionleaderboardJson";
         public static string GET_PLAYER = $"{Url}getplayerJson";
         public static string GET_PLAYER_BATCH = $"{Url}getplayerbatchJson";
