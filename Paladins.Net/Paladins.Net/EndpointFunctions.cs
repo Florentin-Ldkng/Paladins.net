@@ -15,13 +15,13 @@ namespace Paladins.Net
             {
                 return $"{Url}/{Credentials.devId}/{CreateSignature(function)}/{GetTime()}";
             }
-            else if(function == "getplayerbatch" || function == "getmatchdetailsbatch")
+            else if(inputs.Length != 0)
             {
-                return $"{Url}/{Credentials.devId}/{CreateSignature(function)}/{Credentials.session}/{GetTime()}/" + string.Join(',', inputs);
+                return $"{Url}/{Credentials.devId}/{CreateSignature(function)}/{Credentials.session}/{GetTime()}/" + string.Join('/', inputs);
             }
             else
             {
-                return $"{Url}/{Credentials.devId}/{CreateSignature(function)}/{Credentials.session}/{GetTime()}/" + string.Join('/', inputs);
+                return $"{Url}/{Credentials.devId}/{CreateSignature(function)}/{Credentials.session}/{GetTime()}";
             }
         }
         public static string GetMd5Hash(string input)

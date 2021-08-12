@@ -10,14 +10,12 @@ namespace Paladins.Net
 {
     public class RequestHandler
     {
-        private HttpClient client = new HttpClient();
+        private HttpClient _client;
+
         public dynamic Call<T>(string Url)
         {
             Console.WriteLine(Url);
-            client.DefaultRequestHeaders.Accept.Add(
-                new MediaTypeWithQualityHeaderValue("application/json"));
-
-            HttpResponseMessage response = client.GetAsync(Url).Result;
+            HttpResponseMessage response = _client.GetAsync(Url).Result;
             if (response.IsSuccessStatusCode)
             {
                 var dataObjects = response.Content.ReadAsAsync<T>().Result;
@@ -28,6 +26,14 @@ namespace Paladins.Net
                 throw new ApiErrorException((int)response.StatusCode, response.ReasonPhrase);
             }
         }
+
+        protected internal void ClientDefaultSetup()
+        {
+            _client = new HttpClient();
+            _client.DefaultRequestHeaders.Accept.Add(
+                new MediaTypeWithQualityHeaderValue("application/json"));
+        }
+
         public class ApiErrorException : Exception
         {
             public int ErrorCode;

@@ -17,29 +17,40 @@ namespace Paladins.Net
             ping.Response = _requestHandler.Call<String>(Endpoints.PING);
             return ping;
         }
-
         public Session Login(string developerId, string authToken)
         {
+            _requestHandler.ClientDefaultSetup();
             Credentials.devId = developerId;
             Credentials.oAuth = authToken;
             Session savingSession = _requestHandler.Call<Session>(EndpointFunctions.BuildUrl(Endpoints.CREATE_SESSION,"createsession"));
             Credentials.session = savingSession.session_id;
             return savingSession;
         }
-        public Player[] GetPlayer(string Username)
+        public TestSession TestSession()
+        {
+            TestSession test = new TestSession();
+            test.Response = _requestHandler.Call<String>(EndpointFunctions.BuildUrl(Endpoints.TEST_SESSION,"testsession"));
+            return test;
+        }
+        public SessionInfo[] GetSessionInfo()
+        {
+            return _requestHandler.Call<SessionInfo[]>(EndpointFunctions.BuildUrl(Endpoints.GET_DATA_USED,
+                "getdataused"));
+        }
+        public Player[] GetPlayer(string username)
         {
             return _requestHandler.Call<Player[]>(EndpointFunctions.BuildUrl(Endpoints.GET_PLAYER, "getplayer",
-                Username));
+                username));
         }
         public Player[] GetPlayersById(params int[] playerIds)
         {
             return _requestHandler.Call<Player[]>(EndpointFunctions.BuildUrl(Endpoints.GET_PLAYER_BATCH,
-                "getplayerbatch", playerIds.Select(x => x.ToString()).ToArray()));
+                "getplayerbatch", string.Join(',', playerIds.Select(x => x.ToString()).ToArray())));
         }
-        public PartialPlayer[] GetPlayerIdByName(string Username)
+        public PartialPlayer[] GetPlayerIdByName(string username)
         {
             return _requestHandler.Call<PartialPlayer[]>(EndpointFunctions.BuildUrl(Endpoints.GET_PLAYER_ID_BY_NAME,
-                "getplayeridbyname", Username));
+                "getplayeridbyname", username));
         }
 
         
