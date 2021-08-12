@@ -12,7 +12,7 @@ namespace Paladins.Net
     {
         private HttpClient _client;
 
-        public dynamic Call<T>(string Url)
+        protected internal dynamic Call<T>(string Url)
         {
             Console.WriteLine(Url);
             HttpResponseMessage response = _client.GetAsync(Url).Result;
