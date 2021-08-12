@@ -20,6 +20,26 @@
 `client.GetSessionInfo()`  
 **Returns:** [SessionInfo[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/SessionInfo.cs)
 
+### Get Server Status:
+**Usage:**
+`client.GetServerStatus()`  
+**Returns:** [ServerInfo[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/ServerInfo.cs)
+
+### Get Patch Info:
+**Usage:**
+`client.GetPatchInfo()`  
+**Returns:** [PatchInfo](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/PatchInfo.cs)
+
+### Get Champions:
+**Usage:**
+`client.GetChampions(LanguageCode)`  
+**Returns:** [Champion[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/Champion.cs)
+
+### Get Champion Leaderboard:
+**Usage:**
+`client.GetChampionLeaderboard(ChampionId)`  
+**Returns:** [LeaderboardPlayer[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/LeaderboardPlayer.cs)
+
 ### Get Player:
 **Usage:**
 `client.GetPlayer("PlayerName")`  
