@@ -42,7 +42,7 @@ namespace Paladins.Net
             return _requestHandler.Call<Player[]>(EndpointFunctions.BuildUrl(Endpoints.GET_PLAYER, "getplayer",
                 username));
         }
-        public Player[] GetPlayersById(params int[] playerIds)
+        public Player[] GetPlayersByIds(params int[] playerIds)
         {
             return _requestHandler.Call<Player[]>(EndpointFunctions.BuildUrl(Endpoints.GET_PLAYER_BATCH,
                 "getplayerbatch", string.Join(',', playerIds.Select(x => x.ToString()).ToArray())));
