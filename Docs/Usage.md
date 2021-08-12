@@ -25,9 +25,9 @@
 `client.GetPlayer("PlayerName")`  
 **Returns:** [Player[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/Player.cs)
 
-### Get Players by Id:
+### Get Players by Ids:
 **Usage:**
-`client.GetPlayersById(PlayerId,PlayerId,PlayerId)` | `client.GetPlayersById(PlayerId[ ])`  
+`client.GetPlayersByIds(PlayerId,PlayerId,PlayerId)` | `client.GetPlayersByIds(PlayerId[ ])`  
 **Returns:** [Player[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/Player.cs)
 
 ### Get PlayerId by Name:
