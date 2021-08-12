@@ -1,3 +1,7 @@
+# API Coverage
+
+
+
 | Endpoint                        |    Function Names     | Description                                                                                                        | Finished |
 | ------------------------------- | :-------------------: | ------------------------------------------------------------------------------------------------------------------ | :------: |
 | ping                            |       `Ping()`        | [Pings the server](https://github.com/de-MMXIV/Paladins.net/blob/master/Docs/Usage.md#ping)                        |    ✔     |
