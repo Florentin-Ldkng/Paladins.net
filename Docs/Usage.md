@@ -33,7 +33,12 @@
 ### Get Champions:
 **Usage:**
 `client.GetChampions(LanguageCode)`  
-**Returns:** [Champion[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/Champion.cs)
+**Returns:** [Champion[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/Champion.cs)  
+
+### Get ChampionCards:
+**Usage:**
+`client.GetChampionCards(ChampionId, LanguageCode)`  
+**Returns:** [ChampionCard[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/ChampionCard.cs)
 
 ### Get Champion Leaderboard:
 **Usage:**
