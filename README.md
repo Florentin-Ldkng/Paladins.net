@@ -7,7 +7,7 @@ It is still work in progress!
 ❌**Not Yet Available**❌
 
 ### Documentation
-
+_**Keep in mind that none of this is final!**_  
 [API Coverage](https://github.com/de-MMXIV/Paladins.net/blob/master/Docs/Coverage.md)  
 [Examples](https://github.com/de-MMXIV/Paladins.net/blob/master/Docs/Usage.md)
 
