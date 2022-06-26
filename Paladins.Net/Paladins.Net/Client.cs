@@ -17,7 +17,6 @@ namespace Paladins.Net
             ping.Response = _requestHandler.Call<String>(Endpoints.PING);
             return ping;
         }
-
         public Session Login(string developerId, string authToken)
         {
             _requestHandler.ClientDefaultSetup();
@@ -27,62 +26,56 @@ namespace Paladins.Net
             Credentials.session = savingSession.session_id;
             return savingSession;
         }
-
         public TestSession TestSession()
         {
             TestSession test = new TestSession();
             test.Response = _requestHandler.Call<String>(EndpointFunctions.BuildUrl(Endpoints.TEST_SESSION, "testsession"));
             return test;
         }
-
         public SessionInfo[] GetSessionInfo()
         {
             return _requestHandler.Call<SessionInfo[]>(EndpointFunctions.BuildUrl(Endpoints.GET_DATA_USED,
                 "getdataused"));
         }
-
         public ServerInfo[] GetServerStatus()
         {
             return _requestHandler.Call<ServerInfo[]>(EndpointFunctions.BuildUrl(Endpoints.GET_HIREZ_SERVER_STATUS,
                 "gethirezserverstatus"));
         }
-
         public PatchInfo GetPatchInfo()
         {
             return _requestHandler.Call<PatchInfo>(EndpointFunctions.BuildUrl(Endpoints.GET_PATCH_INFO,
                 "getpatchinfo"));
         }
-
-        public Champion[] GetChampions(LanguageCode LanguageCode)
+        public Champion[] GetChampions(LanguageCode languageCode)
         {
             return _requestHandler.Call<Champion[]>(EndpointFunctions.BuildUrl(Endpoints.GET_CHAMPIONS, "getchampions",
-                LanguageCode.ToString("D")));
+                languageCode.ToString("D")));
         }
-
-        public LeaderboardPlayer[] GetChampionLeaderboard(int ChampionId)
+        public ChampionCard[] GetChampionCards(ChampionId championId, LanguageCode languageCode)
+        {
+            return _requestHandler.Call<ChampionCard[]>(EndpointFunctions.BuildUrl(Endpoints.GET_CHAMPION_CARDS, "getchampioncards",
+                championId.ToString("D"), languageCode.ToString("D")));
+        }
+        public LeaderboardPlayer[] GetChampionLeaderboard(ChampionId championId)
         {
             return _requestHandler.Call<LeaderboardPlayer[]>(EndpointFunctions.BuildUrl(
-                Endpoints.GET_CHAMPION_LEADERBOARD, "getchampionleaderboard", ChampionId.ToString(), "428"));
+                Endpoints.GET_CHAMPION_LEADERBOARD, "getchampionleaderboard", championId.ToString(), "428"));
         }
-
         public Player[] GetPlayer(string username)
         {
             return _requestHandler.Call<Player[]>(EndpointFunctions.BuildUrl(Endpoints.GET_PLAYER, "getplayer",
                 username));
         }
-
         public Player[] GetPlayersByIds(params int[] playerIds)
         {
             return _requestHandler.Call<Player[]>(EndpointFunctions.BuildUrl(Endpoints.GET_PLAYER_BATCH,
                 "getplayerbatch", string.Join(',', playerIds.Select(x => x.ToString()).ToArray())));
         }
-
         public PartialPlayer[] GetPlayerIdByName(string username)
         {
             return _requestHandler.Call<PartialPlayer[]>(EndpointFunctions.BuildUrl(Endpoints.GET_PLAYER_ID_BY_NAME,
                 "getplayeridbyname", username));
         }
-
-        
     }
 }
