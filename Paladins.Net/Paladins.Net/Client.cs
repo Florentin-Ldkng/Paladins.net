@@ -102,5 +102,10 @@ namespace Paladins.Net
             return _requestHandler.Call<MatchStat[]>(EndpointFunctions.BuildUrl(Endpoints.GET_MATCH_HISTORY,
                 "getmatchhistory", playerId.ToString("D")));
         }
+        public Loadout[] GetPlayerLoadouts(int playerId,LanguageCode languageCode)
+        {
+            return _requestHandler.Call<Loadout[]>(EndpointFunctions.BuildUrl(Endpoints.GET_PLAYER_LOADOUTS,
+                "getplayerloadouts", playerId.ToString("D"),languageCode.ToString("D")));
+        }
     }
 }
