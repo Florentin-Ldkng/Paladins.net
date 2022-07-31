@@ -11,7 +11,7 @@
 | gethirezserverstatus            |    `GetServerStatus()`     | [Gets Server Status](https://github.com/de-MMXIV/Paladins.net/blob/master/Docs/Usage.md#get-server-status)                   |    ✔     |
 | getpatchinfo                    |      `GetPatchInfo()`      | [Gets Patch Info](https://github.com/de-MMXIV/Paladins.net/blob/master/Docs/Usage.md#get-patch-info)                         |    ✔     |
 | getchampions                    |      `GetChampions()`      | [Gets all Champions](https://github.com/de-MMXIV/Paladins.net/blob/master/Docs/Usage.md#get-champions)                       |    ✔     |
-| getchampioncards                |                            |                                                                                                                              |    ❌     |
+| getchampioncards                |       `GetChampionCards()` | [Gets Champion Cards](https://github.com/de-MMXIV/Paladins.net/blob/master/Docs/Usage.md#get-championcards)                     |    ✔     |
 | getchampionleaderboard          | `GetChampionLeaderboard()` | [Gets Leaderboard for Champion](https://github.com/de-MMXIV/Paladins.net/blob/master/Docs/Usage.md#get-champion-leaderboard) |    ✔     |
 | getchampionskins                |                            |                                                                                                                              |    ❌     |
 | getbountyitems                  |                            |                                                                                                                              |    ❌     |
