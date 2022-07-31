@@ -13,8 +13,8 @@
 | getchampions                    |      `GetChampions()`      | [Gets all Champions](https://github.com/de-MMXIV/Paladins.net/blob/master/Docs/Usage.md#get-champions)                       |    ✔     |
 | getchampioncards                |       `GetChampionCards()` | [Gets Champion Cards](https://github.com/de-MMXIV/Paladins.net/blob/master/Docs/Usage.md#get-championcards)                     |    ✔     |
 | getchampionleaderboard          | `GetChampionLeaderboard()` | [Gets Leaderboard for Champion](https://github.com/de-MMXIV/Paladins.net/blob/master/Docs/Usage.md#get-champion-leaderboard) |    ✔     |
-| getchampionskins                |                            |                                                                                                                              |    ❌     |
-| getbountyitems                  |                            |                                                                                                                              |    ❌     |
+| getchampionskins                | `GetChampionSkins()` |[Gets Champion Skins](https://github.com/Florentin-Ldkng/Paladins.net/blob/master/Docs/Usage.md#get-champion-skins)                           |    ✔     |
+| getbountyitems                  |  `GetBountyItems()`  | [Gets Bounty Items](https://github.com/Florentin-Ldkng/Paladins.net/blob/master/Docs/Usage.md#get-bounty-items)                                                                                                                             |    ✔     |
 | getplayer                       |       `GetPlayer()`        | [Gets player stats](https://github.com/de-MMXIV/Paladins.net/blob/master/Docs/Usage.md#get-player)                           |    ✔     |
 | getplayerbatch                  |    `GetPlayersByIds()`     | [Gets multiple player stats](https://github.com/de-MMXIV/Paladins.net/blob/master/Docs/Usage.md#get-players-by-id)           |    ✔     |
 | getplayeridbyname               |   `GetPlayerIdByName()`    | [Gets player metadata](https://github.com/de-MMXIV/Paladins.net/blob/master/Docs/Usage.md#get-playerid-by-name)              |    ✔     |
