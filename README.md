@@ -13,4 +13,4 @@ _**Keep in mind that none of this is final!**_
 
 
 ### Contact
-You can contact me on [Twitter](https://twitter.com/SuchtpatientTTV) or on Discord (Suchtpatient#8768)
+You can contact me on [Twitter](https://twitter.com/Florentin_Ldkng) or on Discord (Florentin#8768)
