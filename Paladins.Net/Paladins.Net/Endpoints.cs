@@ -20,9 +20,13 @@ namespace Paladins.Net
         public static string GET_CHAMPIONS = $"{Url}getchampionsJson";
         public static string GET_CHAMPION_CARDS = $"{Url}getchampioncardsJson";
         public static string GET_CHAMPION_LEADERBOARD = $"{Url}getchampionleaderboardJson";
+        public static string GET_CHAMPION_SKINS = $"{Url}getchampionskinsJson";
+        public static string GET_CHAMPION_RANKS = $"{Url}getchampionranksJson";
         public static string GET_PLAYER = $"{Url}getplayerJson";
         public static string GET_PLAYER_BATCH = $"{Url}getplayerbatchJson";
         public static string GET_PLAYER_ID_BY_NAME = $"{Url}getplayeridbynameJson";
+        public static string GET_BOUNTY_ITEMS = $"{Url}getbountyitemsJson";
+
 
     }
 }

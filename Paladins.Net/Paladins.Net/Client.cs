@@ -77,5 +77,20 @@ namespace Paladins.Net
             return _requestHandler.Call<PartialPlayer[]>(EndpointFunctions.BuildUrl(Endpoints.GET_PLAYER_ID_BY_NAME,
                 "getplayeridbyname", username));
         }
+        public ChampionSkins[] GetChampionSkins(ChampionId championId, LanguageCode languageCode)
+        {
+            return _requestHandler.Call<ChampionSkins[]>(EndpointFunctions.BuildUrl(Endpoints.GET_CHAMPION_SKINS,
+                "getchampionskins", championId.ToString("D"), languageCode.ToString("D")));
+        }
+        public BountyItem[] GetBountyItems()
+        {
+            return _requestHandler.Call<BountyItem[]>(EndpointFunctions.BuildUrl(Endpoints.GET_BOUNTY_ITEMS,
+                "getbountyitems"));
+        }
+        public ChampionRank[] GetChampionRanks(int playerId)
+        {
+            return _requestHandler.Call<ChampionRank[]>(EndpointFunctions.BuildUrl(Endpoints.GET_CHAMPION_RANKS,
+                "getchampionranks", playerId.ToString("D")));
+        }
     }
 }
