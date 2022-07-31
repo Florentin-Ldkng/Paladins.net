@@ -35,10 +35,15 @@
 `client.GetChampions(LanguageCode)`  
 **Returns:** [Champion[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/Champion.cs)  
 
-### Get ChampionCards:
+### Get Champion Cards:
 **Usage:**
 `client.GetChampionCards(ChampionId, LanguageCode)`  
-**Returns:** [ChampionCard[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/ChampionCard.cs)
+**Returns:** [ChampionCard[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/ChampionCard.cs)  
+
+### Get Champion Skins:
+**Usage:**
+`client.GetChampionSkins(ChampionId, LanguageCode)`  
+**Returns:** [ChampionSkin[ ]](https://github.com/Florentin-Ldkng/Paladins.net/blob/237a8de811c7218ce03416e77976fa3d7a052176/Paladins.Net/Paladins.Net/Structures/ChampionSkins.cs)  
 
 ### Get Champion Leaderboard:
 **Usage:**
@@ -48,7 +53,12 @@
 ### Get Player:
 **Usage:**
 `client.GetPlayer("PlayerName")`  
-**Returns:** [Player[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/Player.cs)
+**Returns:** [Player[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/Player.cs)  
+
+### Get Bounty Items:
+**Usage:**
+`client.GetBountyItems()`  
+**Returns:** [BountyItem[ ]](https://github.com/Florentin-Ldkng/Paladins.net/blob/237a8de811c7218ce03416e77976fa3d7a052176/Paladins.Net/Paladins.Net/Structures/BountyItem.cs)
 
 ### Get Players by Ids:
 **Usage:**
