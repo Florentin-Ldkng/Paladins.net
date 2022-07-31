@@ -25,7 +25,9 @@ namespace Paladins.Net
         public static string GET_PLAYER = $"{Url}getplayerJson";
         public static string GET_PLAYER_BATCH = $"{Url}getplayerbatchJson";
         public static string GET_PLAYER_ID_BY_NAME = $"{Url}getplayeridbynameJson";
+        public static string GET_PLAYER_STATUS = $"{Url}getplayerstatusJson";
         public static string GET_BOUNTY_ITEMS = $"{Url}getbountyitemsJson";
+        public static string GET_MATCH_HISTORY = $"{Url}getmatchhistoryJson";
 
 
     }

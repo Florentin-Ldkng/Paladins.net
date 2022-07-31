@@ -92,5 +92,15 @@ namespace Paladins.Net
             return _requestHandler.Call<ChampionRank[]>(EndpointFunctions.BuildUrl(Endpoints.GET_CHAMPION_RANKS,
                 "getchampionranks", playerId.ToString("D")));
         }
+        public PlayerStatusShort[] GetPlayerStatus(int playerId)
+        {
+            return _requestHandler.Call<PlayerStatusShort[]>(EndpointFunctions.BuildUrl(Endpoints.GET_PLAYER_STATUS,
+                "getplayerstatus", playerId.ToString("D")));
+        }
+        public MatchStat[] GetMatchHistory(int playerId)
+        {
+            return _requestHandler.Call<MatchStat[]>(EndpointFunctions.BuildUrl(Endpoints.GET_MATCH_HISTORY,
+                "getmatchhistory", playerId.ToString("D")));
+        }
     }
 }
