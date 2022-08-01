@@ -48,11 +48,21 @@
 ### Get Champion Leaderboard:
 **Usage:**
 `client.GetChampionLeaderboard(ChampionId)`  
-**Returns:** [LeaderboardPlayer[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/LeaderboardPlayer.cs)
+**Returns:** [LeaderboardPlayer[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/LeaderboardPlayer.cs)  
+
+### Get Champion Ranks:
+**Usage:**
+`client.GetChampionLeaderboard(PlayerId)`  
+**Returns:** [ChampionRank[ ]](https://github.com/Florentin-Ldkng/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/ChampionRank.cs)
 
 ### Get Player:
 **Usage:**
 `client.GetPlayer("PlayerName")`  
+**Returns:** [Player[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/Player.cs)  
+
+### Get Player Loadouts:
+**Usage:**
+`client.GetPlayerLoadouts("PlayerName")`  
 **Returns:** [Player[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/Player.cs)  
 
 ### Get Bounty Items:
