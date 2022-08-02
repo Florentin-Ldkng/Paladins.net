@@ -63,7 +63,7 @@
 ### Get Player Loadouts:
 **Usage:**
 `client.GetPlayerLoadouts("PlayerName")`  
-**Returns:** [Player[ ]](https://github.com/de-MMXIV/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/Player.cs)  
+**Returns:** [Loadout[ ]](https://github.com/Florentin-Ldkng/Paladins.net/blob/master/Paladins.Net/Paladins.Net/Structures/Loadout.cs)  
 
 ### Get Bounty Items:
 **Usage:**
