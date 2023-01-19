@@ -8,7 +8,6 @@ using Paladins.Net.Structures;
 
 namespace Paladins.Net
 {
-        //Comsys Test
     public static class Endpoints
     {
         private const string Url = "https://api.paladins.com/paladinsapi.svc/";
