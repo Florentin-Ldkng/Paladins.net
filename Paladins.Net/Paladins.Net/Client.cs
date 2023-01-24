@@ -107,5 +107,13 @@ namespace Paladins.Net
             return _requestHandler.Call<Loadout[]>(EndpointFunctions.BuildUrl(Endpoints.GET_PLAYER_LOADOUTS,
                 "getplayerloadouts", playerId.ToString("D"),languageCode.ToString("D")));
         }
+
+        public string TestReturn()
+        {
+            Console.WriteLine("in test");
+            return _requestHandler.Call<string>(EndpointFunctions.BuildUrl(Endpoints.GET_HIREZ_SERVER_STATUS,
+                "gethirezserverstatus"));
+           
+        }
     }
 }
